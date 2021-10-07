@@ -17,17 +17,28 @@ public class Fundamentals {
 
     /**
      * someMethod should be used in following cases - when the method should be used
+     *
      * @param param1 - name of the user
      * @param param2 -
      * @return
      */
-    public String someMethod (String param1, int param2){
+    public String someMethod(String param1, int param2) {
         return "something";
     }
 
-}
+
+    /**
+     * anotherMethod is intended to do something else
+     *
+     * @param param1 - yes/no
+     * @return
+     */
+    public String anotherMethod(boolean param1) {
+        return "Bye";
+    }
 
 /*-
 keeps the original formatting , even if we beautify the code , stays the same , unformatted
 sdagfaksgf sakjgafkswjdf asekhfraksjefh kjfhsekaj.sdhgkfe.j iyeswalkrfha.ksehf liyea;lfrhyaselkwhfd lkeaywrflawherlkaws lhyaewsflkhasedf seaziltahlkwesrf eslk/ahlwshef
  */
+}
