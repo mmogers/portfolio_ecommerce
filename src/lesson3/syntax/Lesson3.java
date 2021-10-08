@@ -27,6 +27,10 @@ public class Lesson3 {
             System.out.println("cannot be instance pof Rocketship");
         }*/
 
+        //I want to print my name using Statics
+        Statics statics = new Statics("Marina");
+        System.out.println(statics.getName());
+
     }
     public static String boop(){
         return WorldLibrary.getName();
