@@ -20,8 +20,8 @@ public class ThirdMaximum {
             System.out.println(array[i]);
         }*/
 
-        int [] array = {3};
-        int [] array = {3,2,1};
+        int [] array = {1,-5,-7,-1,-2};
+       // int [] array = {3,2,1};
 
         int max = array[0];
         int min = array[0];
