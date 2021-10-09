@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class ThirdMaximum {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-     /*   System.out.println("Please enter the length of array");
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the length of array");
         int arrayLength = scanner.nextInt();
 
         int [] array = new int[arrayLength];
@@ -24,7 +23,7 @@ public class ThirdMaximum {
        // int [] array = {3,2,1};
 
         int max = array[0];
-        int min = array[0];
+      int min = array[0];
 
         for (int item:array
              ) {
