@@ -3,7 +3,7 @@ package lesson4;
 public class myAtoi {
 
     public static void main(String[] args) {
-        String string = "-91283472332";
+        String string = "-234";
 
         myAtoi(string);
     }
@@ -32,7 +32,7 @@ public class myAtoi {
         }
         //System.out.println("Zeroes" + counter);
         long  number = 0; //to get the number by multiplying to 10 ND ADDING UNITS
-        while (((int)(s.charAt(counter)) <= 57) &&((int)(s.charAt(counter)) >= 48)){ //calculates the number, taking ascii of numbers 48-57
+        while (((int)(s.charAt(counter)) <= '9') &&((int)(s.charAt(counter)) >= '0')){ //calculates the number, taking ascii of numbers 48-57
             number = number * 10 + ((int)s.charAt(counter) - 48);
             counter++; // the place in string
             //System.out.println(number);
@@ -45,7 +45,7 @@ public class myAtoi {
             }
         }
 
-        if (isNegative){
+        if (isNegative){ //checks the sign, if negative
             System.out.println((0-number));
         }else{
             System.out.println(number);
