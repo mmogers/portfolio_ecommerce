@@ -1,10 +1,8 @@
 package lesson4;
-
 public class ThirdMaximum2 {
-
     public static void main(String[] args) {
-        int [] array = {1, 1, 2, 4, 4};
-
+        int [] array = {2,2,3,1};
+        //int [] array = {1};
         int min = array[0];
         for (int item:array //finds min in the array
              ) {
@@ -12,7 +10,6 @@ public class ThirdMaximum2 {
                 min = item;
             }
         }
-
         //initialize all to min
         int max1 = min;
         int max2 = min;
@@ -34,6 +31,10 @@ public class ThirdMaximum2 {
             }
         }
         //System.out.println(max1 +" " + max2 + " " + max3);
-        System.out.println("The third maximum in the array is: " + max3);
+        if (max2 == max3){
+            System.out.println("There is no third maximun, The maximum is: " + max1);
+        }else {
+            System.out.println("The third maximum in the array is: " + max3);
+        }
     }
 }
