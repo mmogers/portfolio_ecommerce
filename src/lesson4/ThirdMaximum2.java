@@ -22,11 +22,12 @@ public class ThirdMaximum2 {
                 max2 = max1;
                 max1 = item;
             }
-            else if (item > max2 && item < max1){
+            else if (item > max2 && item < max1){ //changed to elseif
                 max3 = max2;
                 max2 = item;
             }
-            else if (item > max3 && item < max2){
+            else if (item > max3 && item < max2){//changed to elseif
+                max3 = max2;
                 max3 = item;
             }
         }
