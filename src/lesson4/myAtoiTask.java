@@ -8,7 +8,7 @@ public class myAtoiTask {
     }
 
     static void myAtoi(String s){
-        s = s.trim();//removes leading spaces
+        s = s.trim(); //removes leading spaces
 
         //detects if there is +/- and sets if the number is negative or positive,
         // if no sing - positive by default
