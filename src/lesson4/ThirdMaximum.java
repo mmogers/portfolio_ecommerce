@@ -15,7 +15,7 @@ public class ThirdMaximum {
             System.out.println(array[i]);
         }*/
 
-        int [] array = {3,2,1};
+        int [] array = {2,1,3};
         // int [] array = {3,2,1};
 
         int max = array[0];
@@ -48,7 +48,7 @@ public class ThirdMaximum {
             }
         }
 
-        //  System.out.println(max + " " + secondMax + " " + thirdMaximum);
+          System.out.println(max + " " + secondMax + " " + thirdMaximum);
         if(thirdMaximum == secondMax){
             System.out.println("There is no third maximum , the maximum is " + max);
         }else {
