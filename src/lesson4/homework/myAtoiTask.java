@@ -1,5 +1,5 @@
 //think its done
-package lesson4;
+package lesson4.homework;
 
 public class myAtoiTask {
 

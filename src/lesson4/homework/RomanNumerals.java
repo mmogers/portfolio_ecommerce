@@ -1,4 +1,4 @@
-package lesson4;
+package lesson4.homework;
 import java.util.Scanner;
 
 public class RomanNumerals {
