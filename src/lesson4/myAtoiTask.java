@@ -4,11 +4,12 @@ package lesson4;
 public class myAtoiTask {
 
     public static void main(String[] args) {
-        String string = " -234g dsgas";
-        myAtoi(string);
+        String string = "   -22323232323232323232323";
+        System.out.println(myAtoi(string));
+        System.out.println((int)Math.pow(2,31));
     }
 
-    static void myAtoi(String s){
+    static int myAtoi(String s){
         s = s.trim(); //removes leading spaces
 
         //detects if there is +/- and sets if the number is negative or positive,
@@ -37,10 +38,10 @@ public class myAtoiTask {
         while (((int)(s.charAt(counter)) <= '9') &&((int)(s.charAt(counter)) >= '0')){
             number = number * 10 + ((int)s.charAt(counter) - (int)'0'); // number = ascii(number) - asci (0)
             counter++; // moves the pointer to the next char in string
-            //System.out.println(number);
-
-            if (number > Math.pow(2,31)){ //checks if its in range 2 in pow 31, and updates the number if yes
-                number = (long)Math.pow(2,31);
+            //System.out.println(number + " number creation " + counter);
+            if (number >= (long)Math.pow(2,31)){ //checks if its in range 2 in pow 31, and updates the number if yes
+                number = (long)Math.pow(2,31)-1;
+                System.out.println( number + (long)Math.pow(2,31) + " 2 v 31");
                 break;
             }
             if (counter >= s.length()){ //not to get out of memory in the next iteration
@@ -49,6 +50,6 @@ public class myAtoiTask {
         }
         //checks the sign, if negative sets to 0-number
         number  = isNegative ? 0-number : number;
-        System.out.println(number);
+        return (int)number;
     }
 }
