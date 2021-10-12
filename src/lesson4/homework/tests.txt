@@ -1,0 +1,48 @@
+        String string1 = "1212121212121212"; //range + ->2147483647
+        String string2 = "-12121212121221211"; //range - ->-2147483648
+        String string3 = ""; //empty ->0
+        String string4 = "     "; //empty after spaces ->0
+        String string5 = "2147483647"; //range + ->2147483647
+        String string6 = "2147483648"; //range+1 ->2147483647
+        String string7 = "  -2147483647"; //almost range negative -2147483647
+        String string8 = "-2147483648"; //range negative -2147483648
+        String string9 = "  +2147483647234"; //more then range positive ->2147483647
+        String string10 = " -2147483648234"; //more then range negative ->-2147483648
+        String string11 = "  00105"; //spaces and zeroes ->105
+        String string12 = "  0000"; //only spaces and zeroes ->0
+        String string13 = " -dsfra"; //letters ->0
+        String string14 = " -214748dsgfas"; //->-214748
+        String string15 = "afrgd 25"; //letters and numbers ->0
+        String string16 = "115.24"; //float -> 115
+        String string17 = "  -dsfra"; //letters -> 0
+        String string18 = "125 25"; //->125
+        String string19 = "12 sdfzsaf"; //number with words->12
+        String string20 = "234    678"; //spaces between numbers ->234
+        String string21 = "+0"; //+0 ->0
+        String string22 = null; //null ->0
+
+
+
+        System.out.println(myAtoi(string1));
+        System.out.println(myAtoi(string2));
+        System.out.println(myAtoi(string3));
+        System.out.println(myAtoi(string4));
+        System.out.println(myAtoi(string5));
+        System.out.println(myAtoi(string6));
+        System.out.println(myAtoi(string7));
+        System.out.println(myAtoi(string8));
+        System.out.println(myAtoi(string9));
+        System.out.println(myAtoi(string10));
+        System.out.println(myAtoi(string11));
+        System.out.println(myAtoi(string12));
+        System.out.println(myAtoi(string13));
+        System.out.println(myAtoi(string14));
+        System.out.println(myAtoi(string15));
+        System.out.println(myAtoi(string16));
+        System.out.println(myAtoi(string17));
+        System.out.println(myAtoi(string18));
+        System.out.println(myAtoi(string19));
+        System.out.println(myAtoi(string20));
+        System.out.println(myAtoi(string21));
+        System.out.println(myAtoi(string22));
+
