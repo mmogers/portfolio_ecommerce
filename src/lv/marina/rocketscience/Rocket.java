@@ -1,12 +1,10 @@
-package lv.marina.rockwtscience;
+package lv.marina.rocketscience;
 
-import lv.marina.rocketscience.Engine;
 
 /**
  * Rocket class for building spaceships
  */
 public class Rocket {
-
 
     private String name = "Initial name";
     private String color;
@@ -16,32 +14,12 @@ public class Rocket {
     private static int rocketCounter;
     public String id;
 
-
     public Rocket() {
         addRocket();
     }
 
-
-    public static int getRocketCounter() {
-return getRocketCounter() ;
-    }
-
-   public void printRocketData(){
-       System.out.println("Rocket{" +
-               "name='" + name + '\'' +
-               ", color='" + color + '\'' +
-               ", weight=" + weight +
-               ", height=" + height +
-               ", engine=" + engine +
-               ", id='" + id + '\'' +
-               '}');
-
-}
-
-
-
     /**
-     *
+     *  Argument constructor
      * @param name
      * @param color
      * @param weight
@@ -49,8 +27,9 @@ return getRocketCounter() ;
      * @param engine
      */
     public Rocket(String name, String color, int weight, int height, Engine engine) {
+
         System.out.println("Original: " + this.name);
-        System.out.println("New name : " + name);
+        System.out.println("New name: " + name);
 
         this.name = name;
         this.color = color;
@@ -60,7 +39,21 @@ return getRocketCounter() ;
         addRocket();
     }
 
-    public static  int countRockets(){
+    public void printRocketData() {
+        System.out.println("Rocket{" +
+                "  " + this.name + ", " +
+                "  " + this.color + ", " +
+                "  " + this.height + ", " +
+                "  " + this.weight + ", " +
+                "}");
+    }
+
+    @Override
+    protected void finalize() {
+        System.out.println("The rocket" + this.name + " has been destroyed");
+    }
+
+    static int countRockets() {
         return rocketCounter;
     }
 
@@ -107,5 +100,4 @@ return getRocketCounter() ;
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
-
 }

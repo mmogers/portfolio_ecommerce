@@ -2,18 +2,18 @@ package lv.marina.rocketscience;
 
 public class Engine {
 
-
     private String name;
     private String fuelType;
+    private int engineSize;
     private double fuelConsumption;
-
 
     public Engine() {
     }
 
-    public Engine(String name, String fuelType, double fuelConsumption) {
+    public Engine(String name, String fuelType, int engineSize, double fuelConsumption) {
         this.name = name;
         this.fuelType = fuelType;
+        this.engineSize = engineSize;
         this.fuelConsumption = fuelConsumption;
     }
 
@@ -31,6 +31,14 @@ public class Engine {
 
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
+    }
+
+    public int getEngineSize() {
+        return engineSize;
+    }
+
+    public void setEngineSize(int engineSize) {
+        this.engineSize = engineSize;
     }
 
     public double getFuelConsumption() {
