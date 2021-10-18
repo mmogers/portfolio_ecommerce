@@ -21,6 +21,16 @@ public class Practice {
 
         employee.printSalary();
         manager.printSalary();
+
+
+        Rectangle rectangle = new Rectangle(2,8);
+        Square square = new Square(2,2);
+
+        System.out.println();
+        square.printArea();
+        square.printPerimeter();
+        rectangle.printArea();
+        rectangle.printPerimeter();
 }
 }
 
