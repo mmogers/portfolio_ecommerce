@@ -15,10 +15,11 @@ public class Author {
     public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email; //check dfgjsfg@jrfgsekjfg.skdfrgaewiu
-        if(gender =='m' || gender == 'f') {
+        if(gender =='m' || gender == 'f') { //check if gender is f and m only
             this.gender = gender;
         }else {
             System.out.println("Incorrect gender");
+            this.gender = '-'; //the gender is '-' if other than f or m
             return; //throw error
         }
     }

@@ -108,15 +108,18 @@ public class Practice {
     }
 
     public static void TestBook(){
-        Author anAuthor = new Author("Tan Ah Teck", "ahteck@somewhere.com", 's');
+        Author anAuthor = new Author("Ky By ", "helpme@somebody.com", 'f');
         Book aBook = new Book("Java for dummy", anAuthor, 19.95, 1000);
         // Use an anonymous instance of Author
-        Book anotherBook = new Book("more Java for dummy", new Author("Tan Ah Teck", "ahteck@somewhere.com", 'm'), 29.95, 888);
+        Book anotherBook = new Book("more Java for dummy", new Author("Lo Kim", "dontknow@anything.com", 's'), 29.95, 888);
         System.out.println(aBook.getAuthor().getName());
         System.out.println(aBook.getAuthor().getEmail());
         System.out.println("The author name is: " + aBook.getAuthorName());
         System.out.println("The authors mail is: " + aBook.getAuthorEmail());
         System.out.println("The gender of author is: " + aBook.getAuthorGender());
+        System.out.println("The author name is: " + anotherBook.getAuthorName());
+        System.out.println("The authors mail is: " + anotherBook.getAuthorEmail());
+        System.out.println("The gender of author is: " + anotherBook.getAuthorGender());
     }
 }
 
