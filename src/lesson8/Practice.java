@@ -17,6 +17,7 @@ public class Practice {
         ChildClass childClass = new ChildClass();
         childClass.printChildClass();
         childClass.printThisIsParentClass();
+
         System.out.println();
 
         //3task
@@ -41,6 +42,7 @@ public class Practice {
 
         employee.printSalary();
         manager.printSalary();
+
         System.out.println();
 
         //4-5tasks
@@ -69,6 +71,7 @@ public class Practice {
             areaOf10Squares += squareToCalculateArea.calculateSquareArea();
         }
         System.out.println("The area of 10 squares is: " + areaOf10Squares);
+
         System.out.println();
 
         //6task
@@ -80,8 +83,15 @@ public class Practice {
         * Create a subclass 'Square' of 'Rectangle' having a method to print "Square is a rectangle".
         * Now call the method of 'Shape' and 'Rectangle' class by the object of 'Square' class.*/
         System.out.println("The 6th task: ");
+        square.printHelloMessageShape();
+        square.printHelloMessageRectangle();
+        square.printHelloMessageSquare();
+
+        System.out.println();
 
         //7task
+
+
     }
 }
 

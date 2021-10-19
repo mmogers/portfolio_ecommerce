@@ -23,6 +23,11 @@ public class Square extends Rectangle {
         System.out.println("The area of the square is: " + length*length);
     }
 
+    //this method for task 6
+    public void printHelloMessageSquare (){
+        System.out.println("Square is a rectangle");
+    }
+
     public Square() {
     }
 

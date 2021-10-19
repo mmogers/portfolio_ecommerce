@@ -3,10 +3,14 @@ package lesson8;
 /**
  * calculates and prints the area and the perimeter of the rectangle
  */
-public class Rectangle {
+public class Rectangle extends Shape{
     protected double length;
     private double breadth;
 
+    //for task 6
+    public void printHelloMessageRectangle (){
+        System.out.println("This is rectangular shape");
+    }
    public void printPerimeter (){
        System.out.println("The perimeter is: " + 2*(length+breadth) );
    }
