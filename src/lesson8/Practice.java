@@ -23,7 +23,7 @@ public class Practice {
         manager.printSalary();
 
 
-        Rectangle rectangle = new Rectangle(2,8);
+        Rectangle rectangle = new Rectangle(2,2);
         Square square = new Square(2,2);
 
         System.out.println();
