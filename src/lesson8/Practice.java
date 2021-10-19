@@ -57,14 +57,13 @@ public class Practice {
         Rectangle rectangle = new Rectangle(2, 2);
         Square square = new Square(2, 2);
 
-        System.out.println();
         square.printArea();
         square.printPerimeter();
         rectangle.printArea();
         rectangle.printPerimeter();
 
-        double [] squareSideLengths = {1,2,3,2,5,7,8,6,8,3};
-        int areaOf10Squares = 0;
+        double [] squareSideLengths = {1.1d,2.0d,3,0d,2.211d,5.4d,7.0d,8.0d,6.0d,8.5d,3.3d};
+        double areaOf10Squares = 0;
         for (int i = 0; i < 10; i++) {
             Square squareToCalculateArea = new Square(squareSideLengths[i], squareSideLengths[i]);
             areaOf10Squares += squareToCalculateArea.calculateSquareArea();
@@ -73,6 +72,14 @@ public class Practice {
         System.out.println();
 
         //6task
+        /*
+        * 6.
+        Create a class named 'Shape' with a method to print "This is shape".
+        * Then create two other classes named 'Rectangle', 'Circle' inheriting the Shape class,
+        * both having a method to print "This is rectangular shape" and "This is circular shape" respectively.
+        * Create a subclass 'Square' of 'Rectangle' having a method to print "Square is a rectangle".
+        * Now call the method of 'Shape' and 'Rectangle' class by the object of 'Square' class.*/
+        System.out.println("The 6th task: ");
 
         //7task
     }
