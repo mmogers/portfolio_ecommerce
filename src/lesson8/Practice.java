@@ -90,8 +90,33 @@ public class Practice {
         System.out.println();
 
         //7task
+        System.out.println("The 7th task: ");
+        System.out.println("Author Test: ");
+        AuthorTest();
+        System.out.println("Test Book: ");
+        TestBook();
 
 
+
+    }
+
+    public static void AuthorTest() {
+        Author anAuthor = new Author("Tan Ah Teck", "ahteck@somewhere.com", 'm');
+        System.out.println(anAuthor);   // call toString() === System.out.println(anAuthor.toString());
+        anAuthor.setEmail("paul@nowhere.com");
+        System.out.println(anAuthor);
+    }
+
+    public static void TestBook(){
+        Author anAuthor = new Author("Tan Ah Teck", "ahteck@somewhere.com", 's');
+        Book aBook = new Book("Java for dummy", anAuthor, 19.95, 1000);
+        // Use an anonymous instance of Author
+        Book anotherBook = new Book("more Java for dummy", new Author("Tan Ah Teck", "ahteck@somewhere.com", 'm'), 29.95, 888);
+        System.out.println(aBook.getAuthor().getName());
+        System.out.println(aBook.getAuthor().getEmail());
+        System.out.println("The author name is: " + aBook.getAuthorName());
+        System.out.println("The authors mail is: " + aBook.getAuthorEmail());
+        System.out.println("The gender of author is: " + aBook.getAuthorGender());
     }
 }
 
