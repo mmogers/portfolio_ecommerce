@@ -1,16 +1,14 @@
 package lesson8;
 
+/**
+ * extends member , adds 2 more fields
+ */
 public class Manager extends Member{
     private String specialization;
     private String department;
 
 
     public Manager() {
-    }
-
-    public Manager(String specialization, String department) {
-        this.specialization = specialization;
-        this.department = department;
     }
 
     public Manager(String name, int age, String phoneNumber, String address, double salary) {

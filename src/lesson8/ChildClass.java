@@ -1,9 +1,10 @@
 package lesson8;
 
-import org.w3c.dom.ls.LSOutput;
-
+/**
+ * extends ParentClass , prints "This is child class"
+ */
 public class ChildClass extends ParentClass{
     public void printChildClass(){
-        System.out.println("This is the child class");
+        System.out.println("This is child class");
     }
 }

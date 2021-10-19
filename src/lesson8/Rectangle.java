@@ -1,5 +1,8 @@
 package lesson8;
 
+/**
+ * calculates and prints the area and the perimeter of the rectangle
+ */
 public class Rectangle {
     protected double length;
     private double breadth;

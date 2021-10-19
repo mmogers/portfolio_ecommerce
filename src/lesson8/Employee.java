@@ -1,5 +1,8 @@
 package lesson8;
 
+/**
+ * extends member, adds 2 more fields
+ */
 public class Employee extends Member{
     private String specialization;
     private String department;
@@ -7,21 +10,8 @@ public class Employee extends Member{
     public Employee() {
     }
 
-    public Employee(String specialization, String department) {
-        this.specialization = specialization;
-        this.department = department;
-    }
-
     public Employee(String name, int age, String phoneNumber, String address, double salary) {
         super(name, age, phoneNumber, address, salary);
-    }
-
-
-
-    public Employee(String name, int age, String phoneNumber, String address, double salary, String specialization, String department) {
-        super(name, age, phoneNumber, address, salary);
-        this.specialization = specialization;
-        this.department = department;
     }
 
     public String getSpecialization() {

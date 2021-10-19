@@ -2,6 +2,9 @@ package lesson8;
 
 import javax.xml.namespace.QName;
 
+/**
+ * prints salary of the member
+ */
 public class Member {
 
     private String name;
@@ -14,9 +17,6 @@ public class Member {
     public void printSalary (){
         System.out.println("The salary of  " + name + " is: " + salary);
     }
-
-
-
 
     public Member() {
     }
