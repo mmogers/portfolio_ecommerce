@@ -7,11 +7,6 @@ import java.util.ArrayList;
 public class Lesson7App {
 
 
-
-
-
-
-
     public static void main(String[] args) {
         SpaceShip spaceShip = new SpaceShip( new Engine(), "Escape Plan", 100);
 
